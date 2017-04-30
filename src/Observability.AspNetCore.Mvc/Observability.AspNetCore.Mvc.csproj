@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.6</TargetFramework>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Version>0.1.0-preview</Version>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <Authors>Werner Strydom</Authors>
+    <Company>Werner Strydom</Company>
+    <Product>Observability</Product>
+    <Description>An implementation for ASP.NET MVC core</Description>
+    <Copyright>(c) Copyright Werner Strydom</Copyright>
+    <PackageLicenseUrl>https://github.com/Phaka/Observability/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/Phaka/Observability</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Phaka/Observability</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore" Version="1.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="1.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Observability.Abstractions\Observability.Abstractions.csproj" />
+  </ItemGroup>
+
+</Project>
